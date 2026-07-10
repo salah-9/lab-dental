@@ -1,0 +1,14 @@
+{
+  "extraKnownMarketplaces": {
+    "vision-zion": {
+      "source": {
+        "source": "github",
+        "repo": "Douglas8832/zion"
+      },
+      "autoUpdate": true
+    }
+  },
+  "enabledPlugins": {
+    "zion-pack@vision-zion": true
+  }
+}
