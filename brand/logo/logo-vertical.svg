@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="400" height="560">
+  <g transform="translate(50,20) scale(0.75)">
+    <g stroke="#26343D" stroke-width="1.5" stroke-linejoin="round">
+      <polygon points="70,200 200,70 200,200" fill="#D6DADD"/>
+      <polygon points="200,70 330,200 200,200" fill="#98A2A8"/>
+      <polygon points="330,200 200,330 200,200" fill="#232B30"/>
+      <polygon points="200,330 70,200 200,200" fill="#4A555C"/>
+    </g>
+    <polygon points="70,200 200,70 330,200 200,330" fill="none" stroke="#26343D" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="200" cy="200" r="7" fill="#F7FAFC" stroke="#26343D" stroke-width="2"/>
+  </g>
+
+  <rect x="140" y="345" width="120" height="2" fill="#4A555C" opacity="0.5"/>
+
+  <text x="200" y="410" text-anchor="middle" font-family="Poppins, 'Century Gothic', Futura, Arial, sans-serif" font-weight="700" font-size="48" letter-spacing="3">
+    <tspan fill="#26343D">AESTHE</tspan>
+  </text>
+  <text x="200" y="470" text-anchor="middle" font-family="Poppins, 'Century Gothic', Futura, Arial, sans-serif" font-weight="700" font-size="48" letter-spacing="10">
+    <tspan fill="#4A555C">LAB</tspan>
+  </text>
+</svg>
