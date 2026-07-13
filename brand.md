@@ -149,7 +149,7 @@ barato, popular, genérico, inconsistente, atraso, amador, informal demais, grit
 - Cada variação tem versão reversa (`-reverse`) para fundos escuros
 - Aplicação preferencial: cinza-grafite sobre branco gelo; reversa clara para superfícies escuras
 - Separador vertical no logo horizontal: barra fina em #4A555C a 50% de opacidade
-- Wordmark: "AESTHE" em #26343D, "LAB" em #4A555C — tipografia Poppins Bold, letter-spacing 3/10
+- Wordmark: "AESTHE" em #26343D, "LAB" em #4A555C — tipografia MuseoModerno Bold 700 vetorizada em paths, letter-spacing 3/10
 
 ### Símbolo
 Diamante facetado em 4 planos de cinza (claro → médio → grafite → grafite escuro), representando o corte de precisão de uma peça cerâmica lapidada. Design minimalista: contornos finos (1.5-2px #26343D), sem gradientes, sem sombra. Centro: círculo branco gelo com borda #26343D — ponto de convergência técnica.
