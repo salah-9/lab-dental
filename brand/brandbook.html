@@ -140,7 +140,7 @@ body {
 
 /* ── Sections ── */
 .section {
-  padding: 96px 24px;
+  padding: 120px 24px;
   max-width: 1080px;
   margin: 0 auto;
 }
@@ -150,6 +150,8 @@ body {
   max-width: 100%;
   padding-left: 24px;
   padding-right: 24px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .section--dark .section-inner {
@@ -207,11 +209,12 @@ body {
 .section-label {
   font-family: var(--mono);
   font-size: 11px;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--teal-deep);
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   display: block;
+  text-align: center;
 }
 
 .section--dark .section-label {
@@ -224,9 +227,10 @@ h2 {
   font-size: clamp(28px, 4vw, 42px);
   letter-spacing: 0.02em;
   color: var(--grafite-dark);
-  margin-bottom: 28px;
+  margin-bottom: 40px;
   text-wrap: balance;
   line-height: 1.15;
+  text-align: center;
 }
 
 h3 {
@@ -247,7 +251,10 @@ h3 {
   color: var(--text-secondary);
   line-height: 1.6;
   max-width: 65ch;
-  margin-bottom: 48px;
+  margin-bottom: 56px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section--dark .lead {
@@ -787,46 +794,6 @@ p {
   max-width: 280px;
 }
 
-/* ── Mockups ── */
-.mockup-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
-  margin-top: 40px;
-}
-
-.mockup-card--wide {
-  grid-column: 1 / -1;
-}
-
-.mockup-stage {
-  background: var(--bg-alt);
-  border: 1px solid var(--border);
-  border-radius: 8px 8px 0 0;
-  padding: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.mockup-stage svg {
-  max-width: 100%;
-  height: auto;
-}
-
-.mockup-caption {
-  padding: 12px 16px;
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.04em;
-  line-height: 1.5;
-  color: var(--text-muted);
-  background: var(--bg-alt);
-  border: 1px solid var(--border);
-  border-top: 1px dashed var(--border);
-  border-radius: 0 0 8px 8px;
-}
-
 /* ── Dos/Donts ── */
 .rules-grid {
   display: grid;
@@ -1226,7 +1193,7 @@ p {
       <div class="divider-line"></div>
     </div>
 
-    <span class="section-label" style="margin-top: 48px; display: block;">03 — Voz e tom</span>
+    <span class="section-label" style="margin-top: 64px; display: block;">03 — Voz e tom</span>
     <h2>Como falamos</h2>
     <p class="lead">Profissional e técnico, com leve proximidade B2B. Afirmamos superioridade técnica sem ser espalhafatosos.</p>
 
@@ -1362,28 +1329,6 @@ p {
       <div class="swatch">
         <div class="swatch-color" style="background: #F7FAFC; border: 1px solid #D6DADD;"><span style="background: rgba(0,0,0,0.35);">#F7FAFC</span></div>
         <div class="swatch-info"><div class="swatch-name">Branco gelo</div><div class="swatch-use">Fundo principal, respiro</div></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="palette-section">
-    <h3>Funcionais</h3>
-    <div class="swatch-grid">
-      <div class="swatch">
-        <div class="swatch-color" style="background: #22C55E;"><span>#22C55E</span></div>
-        <div class="swatch-info"><div class="swatch-name">Sucesso</div><div class="swatch-use">Pedido confirmado, entrega OK</div></div>
-      </div>
-      <div class="swatch">
-        <div class="swatch-color" style="background: #EF4444;"><span>#EF4444</span></div>
-        <div class="swatch-info"><div class="swatch-name">Erro</div><div class="swatch-use">Falha, ação destrutiva</div></div>
-      </div>
-      <div class="swatch">
-        <div class="swatch-color" style="background: #F59E0B;"><span>#F59E0B</span></div>
-        <div class="swatch-info"><div class="swatch-name">Aviso</div><div class="swatch-use">Prazo próximo, atenção</div></div>
-      </div>
-      <div class="swatch">
-        <div class="swatch-color" style="background: #3B82F6;"><span>#3B82F6</span></div>
-        <div class="swatch-info"><div class="swatch-name">Info</div><div class="swatch-use">Informativos, tooltips</div></div>
       </div>
     </div>
   </div>
@@ -1582,340 +1527,10 @@ p {
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════ MOCKUPS ═════════════════════════════════════════════ -->
-<section class="section">
-  <span class="section-label">07 — Aplicações da marca</span>
-  <h2>A marca no mundo físico</h2>
-  <p class="lead">Aplicações práticas do laboratório — frota, embalagens de entrega, uniformes e papelaria. Grafite sobre branco gelo em todas as superfícies; o teal aparece apenas em detalhes funcionais.</p>
-
-  <div class="mockup-grid">
-
-    <!-- ── Van de entregas ── -->
-    <div class="mockup-card mockup-card--wide">
-      <div class="mockup-stage">
-        <svg viewBox="0 0 680 340" role="img" aria-label="Mockup de van de entregas com logo lateral">
-          <defs>
-            <linearGradient id="vanBody" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#FFFFFF"/>
-              <stop offset="0.55" stop-color="#F2F5F7"/>
-              <stop offset="1" stop-color="#DDE3E7"/>
-            </linearGradient>
-            <linearGradient id="vanGlass" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#55626B"/>
-              <stop offset="1" stop-color="#2C363C"/>
-            </linearGradient>
-            <filter id="vanShadow" x="-30%" y="-200%" width="160%" height="500%">
-              <feGaussianBlur stdDeviation="7"/>
-            </filter>
-          </defs>
-
-          <!-- sombra -->
-          <ellipse cx="352" cy="302" rx="252" ry="13" fill="#232B30" opacity="0.20" filter="url(#vanShadow)"/>
-
-          <!-- carroceria -->
-          <path d="M596,262 L124,257 Q109,253 108,233 L110,203 Q112,186 129,182 L158,176 Q186,172 197,165 L241,118 Q252,110 271,110 L584,114 Q597,115 597,128 Z"
-                fill="url(#vanBody)" stroke="#26343D" stroke-width="2.5" stroke-linejoin="round"/>
-
-          <!-- brilho do teto -->
-          <path d="M280,114 L560,117" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
-          <!-- vinco lateral -->
-          <path d="M162,208 L590,202" stroke="#D6DADD" stroke-width="2" stroke-linecap="round"/>
-
-          <!-- friso teal + saia preta -->
-          <rect x="138" y="251" width="458" height="3" fill="#0F5C6E"/>
-          <path d="M138,254 L596,258 L596,276 L146,272 Q138,270 138,262 Z" fill="#232B30"/>
-          <!-- para-choque dianteiro -->
-          <path d="M104,238 Q102,258 122,262 L138,263 L138,240 Q120,242 108,236 Z" fill="#232B30"/>
-
-          <!-- para-brisa -->
-          <path d="M244,122 L207,162 L247,162 L254,122 Z" fill="url(#vanGlass)" stroke="#26343D" stroke-width="1.5" stroke-linejoin="round"/>
-          <!-- janela da porta -->
-          <path d="M263,123 L332,124 L332,162 L258,162 Q253,162 254,156 Z" fill="url(#vanGlass)" stroke="#26343D" stroke-width="1.5" stroke-linejoin="round"/>
-
-          <!-- costuras de porta -->
-          <path d="M342,118 L342,252" stroke="#C7CED3" stroke-width="1.5"/>
-          <path d="M474,120 L474,253" stroke="#C7CED3" stroke-width="1.5"/>
-          <rect x="300" y="170" width="18" height="4" rx="2" fill="#4A555C"/>
-          <rect x="350" y="171" width="18" height="4" rx="2" fill="#4A555C"/>
-
-          <!-- farol e grade -->
-          <path d="M112,186 L150,180 L147,196 L114,200 Z" fill="#E8EDF0" stroke="#26343D" stroke-width="1.2"/>
-          <path d="M114,212 L142,209" stroke="#26343D" stroke-width="2.5" stroke-linecap="round"/>
-          <path d="M115,222 L140,220" stroke="#26343D" stroke-width="2.5" stroke-linecap="round"/>
-
-          <!-- rodas -->
-          <circle cx="196" cy="266" r="42" fill="#12161A"/>
-          <circle cx="512" cy="266" r="42" fill="#12161A"/>
-          <g>
-            <circle cx="196" cy="266" r="33" fill="#232B30"/>
-            <circle cx="196" cy="266" r="18" fill="#39434A" stroke="#98A2A8" stroke-width="1.5"/>
-            <g stroke="#12161A" stroke-width="3" stroke-linecap="round">
-              <path d="M196,252 L196,280 M182,266 L210,266 M186,256 L206,276 M186,276 L206,256"/>
-            </g>
-            <circle cx="196" cy="266" r="4.5" fill="#D6DADD"/>
-          </g>
-          <g>
-            <circle cx="512" cy="266" r="33" fill="#232B30"/>
-            <circle cx="512" cy="266" r="18" fill="#39434A" stroke="#98A2A8" stroke-width="1.5"/>
-            <g stroke="#12161A" stroke-width="3" stroke-linecap="round">
-              <path d="M512,252 L512,280 M498,266 L526,266 M502,256 L522,276 M502,276 L522,256"/>
-            </g>
-            <circle cx="512" cy="266" r="4.5" fill="#D6DADD"/>
-          </g>
-
-          <!-- logo lateral -->
-          <g transform="translate(358,142) scale(0.24)">
-            <g stroke="#26343D" stroke-width="1.5" stroke-linejoin="round">
-              <polygon points="70,200 200,70 200,200" fill="#D6DADD"/>
-              <polygon points="200,70 330,200 200,200" fill="#98A2A8"/>
-              <polygon points="330,200 200,330 200,200" fill="#232B30"/>
-              <polygon points="200,330 70,200 200,200" fill="#4A555C"/>
-            </g>
-            <polygon points="70,200 200,70 330,200 200,330" fill="none" stroke="#26343D" stroke-width="2" stroke-linejoin="round"/>
-            <circle cx="200" cy="200" r="7" fill="#F7FAFC" stroke="#26343D" stroke-width="2"/>
-          </g>
-          <rect x="452" y="152" width="2" height="64" fill="#4A555C" opacity="0.5"/>
-          <text x="467" y="184" font-family="'MuseoModerno', 'Century Gothic', sans-serif" font-weight="700" font-size="26" letter-spacing="2" fill="#26343D">AESTHE</text>
-          <text x="467" y="214" font-family="'MuseoModerno', 'Century Gothic', sans-serif" font-weight="700" font-size="26" letter-spacing="2" fill="#4A555C">LAB</text>
-        </svg>
-      </div>
-      <div class="mockup-caption">Frota — vinil recortado na lateral do furgão, logo horizontal (altura mín. 400mm), friso teal 30mm sobre a saia inferior</div>
-    </div>
-
-    <!-- ── Embalagem caixa (perspectiva) ── -->
-    <div class="mockup-card">
-      <div class="mockup-stage">
-        <svg viewBox="0 0 480 340" role="img" aria-label="Mockup de caixa de entrega em perspectiva">
-          <defs>
-            <filter id="boxShadow" x="-30%" y="-200%" width="160%" height="500%">
-              <feGaussianBlur stdDeviation="8"/>
-            </filter>
-          </defs>
-
-          <!-- sombra -->
-          <ellipse cx="266" cy="304" rx="178" ry="15" fill="#232B30" opacity="0.20" filter="url(#boxShadow)"/>
-
-          <!-- faces -->
-          <polygon points="118,128 272,84 414,132 260,180" fill="#FBFDFE" stroke="#26343D" stroke-width="2" stroke-linejoin="round"/>
-          <polygon points="118,128 260,180 260,296 118,238" fill="#E8EDF0" stroke="#26343D" stroke-width="2" stroke-linejoin="round"/>
-          <polygon points="260,180 414,132 414,240 260,296" fill="#D3DADE" stroke="#26343D" stroke-width="2" stroke-linejoin="round"/>
-
-          <!-- lacre teal sobre a tampa -->
-          <polygon points="203,104 226,97 368,146 345,154" fill="#0F5C6E" opacity="0.95"/>
-
-          <!-- costura da tampa -->
-          <path d="M118,152 L260,204 M260,204 L414,156" stroke="#98A2A8" stroke-width="1.5" fill="none"/>
-
-          <!-- tampa: fileira de diamantes + wordmark (plano da tampa) -->
-          <g transform="matrix(0.9625,-0.275,0.940,0.344,133,138)">
-            <g stroke="#26343D" stroke-width="1.6" fill="none" stroke-linejoin="round">
-              <polygon points="8,0 16,8 8,16 0,8" transform="translate(4,4)"/>
-              <polygon points="8,0 16,8 8,16 0,8" transform="translate(36,4)"/>
-              <polygon points="8,0 16,8 8,16 0,8" transform="translate(68,4)"/>
-              <polygon points="8,0 16,8 8,16 0,8" transform="translate(100,4)"/>
-            </g>
-          </g>
-
-          <!-- face frontal-esquerda: lockup + tagline -->
-          <g transform="matrix(0.940,0.344,0,1,118,128)">
-            <g transform="translate(13,16) scale(0.115)">
-              <g stroke="#26343D" stroke-width="2" stroke-linejoin="round">
-                <polygon points="70,200 200,70 200,200" fill="#D6DADD"/>
-                <polygon points="200,70 330,200 200,200" fill="#98A2A8"/>
-                <polygon points="330,200 200,330 200,200" fill="#232B30"/>
-                <polygon points="200,330 70,200 200,200" fill="#4A555C"/>
-              </g>
-            </g>
-            <text x="50" y="38" font-family="'MuseoModerno', 'Century Gothic', sans-serif" font-weight="700" font-size="15" letter-spacing="1.5" fill="#26343D">AESTHE</text>
-            <text x="50" y="55" font-family="'MuseoModerno', 'Century Gothic', sans-serif" font-weight="700" font-size="15" letter-spacing="1.5" fill="#4A555C">LAB</text>
-            <text x="13" y="88" font-family="'Source Sans Pro', system-ui, sans-serif" font-size="10" fill="#4A555C">Precisão que chega no prazo.</text>
-          </g>
-
-          <!-- face direita: etiqueta técnica -->
-          <g transform="matrix(0.956,-0.298,0,1,260,180)">
-            <rect x="16" y="22" width="104" height="76" rx="3" fill="#FFFFFF" stroke="#98A2A8" stroke-width="1.2"/>
-            <text x="24" y="38" font-family="monospace" font-size="9" fill="#26343D">PEDIDO #4527</text>
-            <line x1="24" y1="44" x2="112" y2="44" stroke="#D9E3E8" stroke-width="1"/>
-            <text x="24" y="57" font-family="monospace" font-size="8" fill="#4A555C">Dr. Silva</text>
-            <text x="24" y="69" font-family="monospace" font-size="8" fill="#4A555C">6 lentes e.max — A1</text>
-            <text x="24" y="81" font-family="monospace" font-size="8" fill="#4A555C">Espessura 0.3mm</text>
-            <text x="24" y="93" font-family="monospace" font-size="8" fill="#0F5C6E">Entrega: hoje, 14h</text>
-          </g>
-        </svg>
-      </div>
-      <div class="mockup-caption">Caixa de entrega — duplex 300g branco gelo, diamantes em relevo seco na tampa, lacre teal, etiqueta técnica do pedido na lateral</div>
-    </div>
-
-    <!-- ── Pote de coroas ── -->
-    <div class="mockup-card">
-      <div class="mockup-stage">
-        <svg viewBox="0 0 420 340" role="img" aria-label="Mockup de pote de transporte de coroas">
-          <defs>
-            <linearGradient id="potBody" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0" stop-color="#E9EEF1"/>
-              <stop offset="0.25" stop-color="#FFFFFF"/>
-              <stop offset="0.75" stop-color="#F4F7F9"/>
-              <stop offset="1" stop-color="#DDE3E7"/>
-            </linearGradient>
-            <linearGradient id="potLid" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0" stop-color="#39434A"/>
-              <stop offset="0.3" stop-color="#5C6870"/>
-              <stop offset="0.75" stop-color="#4A555C"/>
-              <stop offset="1" stop-color="#333D44"/>
-            </linearGradient>
-            <filter id="potShadow" x="-60%" y="-300%" width="220%" height="700%">
-              <feGaussianBlur stdDeviation="6"/>
-            </filter>
-          </defs>
-
-          <ellipse cx="210" cy="290" rx="92" ry="10" fill="#232B30" opacity="0.20" filter="url(#potShadow)"/>
-
-          <!-- corpo -->
-          <path d="M135,120 L135,262 Q135,282 210,282 Q285,282 285,262 L285,120 Z" fill="url(#potBody)" stroke="#26343D" stroke-width="2"/>
-          <!-- tampa -->
-          <rect x="127" y="86" width="166" height="36" rx="9" fill="url(#potLid)" stroke="#26343D" stroke-width="2"/>
-          <ellipse cx="210" cy="86" rx="83" ry="12" fill="#6B757C" stroke="#26343D" stroke-width="2"/>
-          <path d="M138,102 L138,116 M150,106 L150,120 M162,108 L162,122" stroke="#26343D" stroke-width="1.2" opacity="0.5"/>
-          <path d="M282,102 L282,116 M270,106 L270,120 M258,108 L258,122" stroke="#26343D" stroke-width="1.2" opacity="0.5"/>
-
-          <!-- rótulo -->
-          <rect x="135" y="148" width="150" height="96" fill="#FFFFFF" stroke="#D6DADD" stroke-width="1.5"/>
-          <g transform="translate(147,160) scale(0.105)">
-            <g stroke="#26343D" stroke-width="2" stroke-linejoin="round">
-              <polygon points="70,200 200,70 200,200" fill="#D6DADD"/>
-              <polygon points="200,70 330,200 200,200" fill="#98A2A8"/>
-              <polygon points="330,200 200,330 200,200" fill="#232B30"/>
-              <polygon points="200,330 70,200 200,200" fill="#4A555C"/>
-            </g>
-          </g>
-          <text x="190" y="178" font-family="'MuseoModerno', 'Century Gothic', sans-serif" font-weight="700" font-size="13" letter-spacing="1.5" fill="#26343D">AESTHE</text>
-          <text x="190" y="193" font-family="'MuseoModerno', 'Century Gothic', sans-serif" font-weight="700" font-size="13" letter-spacing="1.5" fill="#4A555C">LAB</text>
-          <line x1="147" y1="206" x2="273" y2="206" stroke="#D9E3E8" stroke-width="1"/>
-          <text x="147" y="221" font-family="monospace" font-size="8.5" fill="#4A555C">Coroa unitária — 26</text>
-          <text x="147" y="234" font-family="monospace" font-size="8.5" fill="#4A555C">Zircônia multicamada</text>
-
-          <!-- reflexo -->
-          <path d="M148,132 L148,252" stroke="#FFFFFF" stroke-width="5" opacity="0.5" stroke-linecap="round"/>
-        </svg>
-      </div>
-      <div class="mockup-caption">Pote de coroas — tampa grafite com rosca, rótulo técnico com dados da peça e do elemento</div>
-    </div>
-
-    <!-- ── Camiseta frente/costas ── -->
-    <div class="mockup-card mockup-card--wide">
-      <div class="mockup-stage">
-        <svg viewBox="0 0 680 350" role="img" aria-label="Mockup de camiseta do uniforme, frente e costas">
-          <defs>
-            <linearGradient id="teeGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#37444C"/>
-              <stop offset="1" stop-color="#232B30"/>
-            </linearGradient>
-            <filter id="teeShadow" x="-30%" y="-30%" width="160%" height="160%">
-              <feGaussianBlur stdDeviation="8"/>
-            </filter>
-          </defs>
-
-          <!-- FRENTE -->
-          <g transform="translate(30,26)">
-            <path d="M115,46 C126,34 142,28 155,28 C168,28 184,34 195,46 L258,80 Q262,84 260,90 L238,138 Q236,144 229,141 L206,130 L206,268 Q206,278 196,279 Q155,285 114,279 Q104,278 104,268 L104,130 L81,141 Q74,144 72,138 L50,90 Q48,84 52,80 Z"
-                  fill="#232B30" opacity="0.25" filter="url(#teeShadow)" transform="translate(4,8)"/>
-            <path d="M115,46 C126,34 142,28 155,28 C168,28 184,34 195,46 L258,80 Q262,84 260,90 L238,138 Q236,144 229,141 L206,130 L206,268 Q206,278 196,279 Q155,285 114,279 Q104,278 104,268 L104,130 L81,141 Q74,144 72,138 L50,90 Q48,84 52,80 Z"
-                  fill="url(#teeGrad)" stroke="#1A2126" stroke-width="2" stroke-linejoin="round"/>
-            <!-- gola frente -->
-            <path d="M126,42 Q155,68 184,42" fill="none" stroke="#1A2126" stroke-width="2.5"/>
-            <path d="M129,42 Q155,62 181,42" fill="none" stroke="#12161A" stroke-width="1.2" opacity="0.7"/>
-            <!-- costuras -->
-            <path d="M206,128 L232,140 M104,128 L78,140" stroke="#1A2126" stroke-width="1.2" opacity="0.8"/>
-            <path d="M108,271 Q155,277 202,271" fill="none" stroke="#1A2126" stroke-width="1.2" opacity="0.8"/>
-            <!-- símbolo bordado no peito -->
-            <g transform="translate(118,82) scale(0.075)" stroke="#F7FAFC" stroke-width="14" stroke-linejoin="round" fill="none">
-              <polygon points="70,200 200,70 330,200 200,330"/>
-              <path d="M70,200 L330,200 M200,70 L200,330"/>
-            </g>
-          </g>
-          <text x="185" y="336" text-anchor="middle" font-family="'Source Sans Pro', system-ui, sans-serif" font-size="12" fill="#98A2A8">Frente — símbolo bordado no peito</text>
-
-          <!-- COSTAS -->
-          <g transform="translate(380,26)">
-            <path d="M115,46 C126,34 142,28 155,28 C168,28 184,34 195,46 L258,80 Q262,84 260,90 L238,138 Q236,144 229,141 L206,130 L206,268 Q206,278 196,279 Q155,285 114,279 Q104,278 104,268 L104,130 L81,141 Q74,144 72,138 L50,90 Q48,84 52,80 Z"
-                  fill="#232B30" opacity="0.25" filter="url(#teeShadow)" transform="translate(4,8)"/>
-            <path d="M115,46 C126,34 142,28 155,28 C168,28 184,34 195,46 L258,80 Q262,84 260,90 L238,138 Q236,144 229,141 L206,130 L206,268 Q206,278 196,279 Q155,285 114,279 Q104,278 104,268 L104,130 L81,141 Q74,144 72,138 L50,90 Q48,84 52,80 Z"
-                  fill="url(#teeGrad)" stroke="#1A2126" stroke-width="2" stroke-linejoin="round"/>
-            <!-- gola costas -->
-            <path d="M126,42 Q155,52 184,42" fill="none" stroke="#1A2126" stroke-width="2.5"/>
-            <!-- costuras -->
-            <path d="M206,128 L232,140 M104,128 L78,140" stroke="#1A2126" stroke-width="1.2" opacity="0.8"/>
-            <path d="M108,271 Q155,277 202,271" fill="none" stroke="#1A2126" stroke-width="1.2" opacity="0.8"/>
-            <!-- estampa central -->
-            <g transform="translate(127,96) scale(0.155)" stroke="#F7FAFC" stroke-width="10" stroke-linejoin="round" fill="none">
-              <polygon points="70,200 200,70 330,200 200,330"/>
-              <path d="M70,200 L330,200 M200,70 L200,330"/>
-            </g>
-            <text x="158" y="184" text-anchor="middle" font-family="'MuseoModerno', 'Century Gothic', sans-serif" font-weight="700" font-size="17" letter-spacing="2" fill="#F7FAFC">AESTHE</text>
-            <text x="158" y="204" text-anchor="middle" font-family="'MuseoModerno', 'Century Gothic', sans-serif" font-weight="700" font-size="17" letter-spacing="2" fill="#D6DADD">LAB</text>
-          </g>
-          <text x="535" y="336" text-anchor="middle" font-family="'Source Sans Pro', system-ui, sans-serif" font-size="12" fill="#98A2A8">Costas — estampa central branco gelo</text>
-        </svg>
-      </div>
-      <div class="mockup-caption">Uniforme — camiseta grafite escuro; frente com símbolo bordado no peito (mín. 8mm), costas com estampa central em serigrafia branco gelo</div>
-    </div>
-
-    <!-- ── Cartão de visita ── -->
-    <div class="mockup-card mockup-card--wide">
-      <div class="mockup-stage">
-        <svg viewBox="0 0 660 220" role="img" aria-label="Mockup de cartão de visita frente e verso">
-          <defs>
-            <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="150%">
-              <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#232B30" flood-opacity="0.22"/>
-            </filter>
-          </defs>
-          <!-- frente (grafite) -->
-          <g transform="translate(20,18)" filter="url(#cardShadow)">
-            <rect x="0" y="0" width="292" height="168" rx="6" fill="#232B30"/>
-            <g transform="translate(112,32) scale(0.17)">
-              <g stroke="#98A2A8" stroke-width="1.5" stroke-linejoin="round">
-                <polygon points="70,200 200,70 200,200" fill="#F7FAFC"/>
-                <polygon points="200,70 330,200 200,200" fill="#D6DADD"/>
-                <polygon points="330,200 200,330 200,200" fill="#5C6870"/>
-                <polygon points="200,330 70,200 200,200" fill="#98A2A8"/>
-              </g>
-              <polygon points="70,200 200,70 330,200 200,330" fill="none" stroke="#98A2A8" stroke-width="2" stroke-linejoin="round"/>
-              <circle cx="200" cy="200" r="7" fill="#232B30" stroke="#98A2A8" stroke-width="2"/>
-            </g>
-            <text x="146" y="118" text-anchor="middle" font-family="'MuseoModerno', 'Century Gothic', sans-serif" font-weight="700" font-size="17" letter-spacing="2" fill="#F7FAFC">AESTHE</text>
-            <text x="146" y="138" text-anchor="middle" font-family="'MuseoModerno', 'Century Gothic', sans-serif" font-weight="700" font-size="17" letter-spacing="2" fill="#98A2A8">LAB</text>
-          </g>
-          <!-- verso (branco gelo) -->
-          <g transform="translate(348,18)" filter="url(#cardShadow)">
-            <rect x="0" y="0" width="292" height="168" rx="6" fill="#F7FAFC" stroke="#D6DADD" stroke-width="1.5"/>
-            <g transform="translate(20,18) scale(0.09)">
-              <g stroke="#26343D" stroke-width="2" stroke-linejoin="round">
-                <polygon points="70,200 200,70 200,200" fill="#D6DADD"/>
-                <polygon points="200,70 330,200 200,200" fill="#98A2A8"/>
-                <polygon points="330,200 200,330 200,200" fill="#232B30"/>
-                <polygon points="200,330 70,200 200,200" fill="#4A555C"/>
-              </g>
-            </g>
-            <text x="20" y="72" font-family="'MuseoModerno', 'Century Gothic', sans-serif" font-weight="700" font-size="13" fill="#26343D">Nome do Técnico</text>
-            <text x="20" y="88" font-family="'Source Sans Pro', system-ui, sans-serif" font-size="10" fill="#4A555C">Técnico em prótese dentária — TPD 00000</text>
-            <line x1="20" y1="102" x2="272" y2="102" stroke="#D9E3E8" stroke-width="1"/>
-            <text x="20" y="120" font-family="monospace" font-size="9" fill="#4A555C">+55 00 90000-0000</text>
-            <text x="20" y="134" font-family="monospace" font-size="9" fill="#4A555C">contato@aesthelab.com.br</text>
-            <text x="20" y="148" font-family="monospace" font-size="9" fill="#0F5C6E">@aesthelab</text>
-          </g>
-        </svg>
-      </div>
-      <div class="mockup-caption">Cartão de visita 85×54mm — frente grafite escuro com logo vertical, verso branco gelo com dados em fonte mono; offset fosco, laminação soft touch</div>
-    </div>
-
-  </div>
-
-  <p style="font-size: 13px; color: var(--text-muted); margin-top: 24px; max-width: 65ch;">Para mockups fotográficos (foto real de van, caixa ou camiseta com a marca aplicada), adicione as imagens-base em <code style="font-family: var(--mono); font-size: 12px;">brand/mockups/</code> — os logos vetoriais em <code style="font-family: var(--mono); font-size: 12px;">brand/logo/</code> estão prontos para composição.</p>
-</section>
 
 <!-- ═════════════════════════════════════ DESIGN SYSTEM ═════════════════════════════════════════ -->
 <section class="section">
-  <span class="section-label">08 — Design system</span>
+  <span class="section-label">07 — Design system</span>
   <h2>Tokens e componentes</h2>
   <p class="lead">Sistema de spacing base-4, radius discreto, elevação sutil. Cada detalhe reforça a personalidade precisa e controlada da marca.</p>
 
@@ -2005,7 +1620,7 @@ p {
 
 <!-- ══════════════════════════════════════ FOTOGRAFIA ═══════════════════════════════════════════ -->
 <section class="section" style="background: #FFFFFF;">
-  <span class="section-label">09 — Fotografia</span>
+  <span class="section-label">08 — Fotografia</span>
   <h2>Imagem como prova técnica</h2>
   <p class="lead">Três categorias de fotografia, todas com a mesma diretriz: técnica, limpa, precisa. A imagem comprova — nunca decora.</p>
 
@@ -2071,7 +1686,7 @@ p {
 
 <!-- ══════════════════════════════════ ACESSIBILIDADE ═══════════════════════════════════════════ -->
 <section class="section">
-  <span class="section-label">10 — Acessibilidade</span>
+  <span class="section-label">09 — Acessibilidade</span>
   <h2>Contraste e legibilidade</h2>
   <p class="lead">Todas as combinações de texto passam WCAG AA. Cinza médio é reservado para elementos decorativos.</p>
 
@@ -2105,7 +1720,7 @@ p {
 
 <!-- ═══════════════════════════════════ DOS AND DONTS ═══════════════════════════════════════════ -->
 <section class="section" style="background: #FFFFFF;">
-  <span class="section-label">11 — Dos and Don'ts</span>
+  <span class="section-label">10 — Dos and Don'ts</span>
   <h2>Regras absolutas</h2>
 
   <div class="rules-grid">
@@ -2140,7 +1755,7 @@ p {
 
 <!-- ═══════════════════════════════════ CANAIS ══════════════════════════════════════════════════ -->
 <section class="section">
-  <span class="section-label">12 — Aplicação por canal</span>
+  <span class="section-label">11 — Aplicação por canal</span>
   <h2>Adaptação contextual</h2>
   <p class="lead">O tom e formato mudam por canal, mas a voz — precisa, técnica, discreta — permanece constante.</p>
 
