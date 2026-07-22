@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <rect x="0" y="0" width="1080" height="1080" fill="#232B30"/>
+  <g transform="translate(540,540)" fill="none" stroke="#F7FAFC" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    
+    <g stroke-width="6">
+      <polygon points="-190,0 0,-190 0,0" fill="#D6DADD" stroke="#F7FAFC"/>
+      <polygon points="0,-190 190,0 0,0" fill="#98A2A8" stroke="#F7FAFC"/>
+      <polygon points="190,0 0,190 0,0" fill="#232B30" stroke="#F7FAFC"/>
+      <polygon points="0,190 -190,0 0,0" fill="#4A555C" stroke="#F7FAFC"/>
+    </g>
+    <polygon points="-190,0 0,-190 190,0 0,190" fill="none" stroke="#F7FAFC" stroke-width="7"/>
+    <circle cx="0" cy="0" r="9" fill="#F7FAFC"/>
+    
+  </g>
+</svg>
